@@ -9,7 +9,6 @@ Cursor, Codex and any agent that reads the [Agent Skills](https://agentskills.io
 |---|---|
 | [`laravel-security`](skills/laravel-security/SKILL.md) | Writing and reviewing Laravel code that touches authorization, tenants, input, money, files, OTP, webhooks or raw SQL. An ordered 10-step review with grep checks and the tests that prove each control. |
 | [`engineering-guard`](skills/engineering-guard/SKILL.md) | Any non-trivial change: routes the agent to the right skills while working and runs a done-checklist (tests, format, static analysis, N+1, migrations, security) before it says "done". |
-| [`project-kickoff`](skills/project-kickoff/SKILL.md) | The first session in a project: learn the stack, propose only what's needed now, set up quality gates. |
 
 ## Install
 

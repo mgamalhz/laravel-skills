@@ -1,6 +1,6 @@
 {
   "name": "mgamalhz",
-  "description": "Agent skills for well-engineered Laravel backends: security review, engineering checks and project kickoff.",
+  "description": "Agent skills for well-engineered Laravel backends: security review and engineering checks.",
   "owner": {
     "name": "Mohamed Gamal",
     "url": "https://mgamalhz.com"
@@ -9,7 +9,7 @@
     {
       "name": "laravel-engineering",
       "source": "./",
-      "description": "Security review, engineering done-checklist and project kickoff skills for Laravel backends."
+      "description": "Security review and engineering done-checklist skills for Laravel backends."
     }
   ]
 }

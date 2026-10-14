@@ -1,7 +1,7 @@
 {
   "name": "laravel-engineering",
   "version": "0.1.0",
-  "description": "Security review, engineering done-checklist and project kickoff skills for Laravel backends.",
+  "description": "Security review and engineering done-checklist skills for Laravel backends.",
   "author": {
     "name": "Mohamed Gamal",
     "url": "https://mgamalhz.com"
