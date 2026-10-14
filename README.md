@@ -1,14 +1,15 @@
-# Skills
+# Laravel skills
 
-Agent skills for well-engineered Laravel backends. They work with Claude Code,
-Cursor, Codex and any agent that reads the [Agent Skills](https://agentskills.io) format.
+Agent skills for well-engineered Laravel backends: secure, fast and verified
+before they're called done. They work with Claude Code, Cursor, Codex and any
+agent that reads the [Agent Skills](https://agentskills.io) format.
 
 > `0.x` — usable today, still being measured. Feedback and issues welcome.
 
 | Skill | Use it for |
 |---|---|
-| [`laravel-security`](skills/laravel-security/SKILL.md) | Writing and reviewing Laravel code that touches authorization, tenants, input, money, files, OTP, webhooks or raw SQL. An ordered 10-step review with grep checks and the tests that prove each control. |
-| [`engineering-guard`](skills/engineering-guard/SKILL.md) | Any non-trivial change: routes the agent to the right skills while working and runs a done-checklist (tests, format, static analysis, N+1, migrations, security) before it says "done". |
+| [`laravel-security`](skills/laravel-security/SKILL.md) | Writing and reviewing code that touches authorization, tenants, input, money, files, OTP, webhooks or raw SQL. An ordered 10-step review with grep checks and the tests that prove each control. |
+| [`laravel-done-checklist`](skills/laravel-done-checklist/SKILL.md) | Before calling any change done: tests (including failure paths), Pint, Larastan, N+1, indexes, migrations, security and a diff review — with an honest report of what was and wasn't verified. |
 
 ## Install
 
@@ -31,18 +32,22 @@ npx skills add mgamalhz/skills --skill laravel-security   # just one
 
 ## Works well with
 
-These are maintained elsewhere — install them from their source:
+General-purpose skills maintained elsewhere — install them from their source:
 
-- [`spatie/guidelines-skills`](https://github.com/spatie/guidelines-skills) — Laravel/PHP code style.
-- [`trailofbits/skills`](https://github.com/trailofbits/skills) — `differential-review`, `static-analysis`, `fp-check` for security review.
-- [`mgamalhz/foundation`](https://github.com/mgamalhz/foundation) — `state-lifecycle` and `audit-trail` skills ship with its packages.
-
-`engineering-guard` uses whichever of these are installed and skips the rest.
+- [`karpathy-guidelines`](https://github.com/forrestchang/andrej-karpathy-skills) — small, surgical changes; state assumptions; no speculative abstractions.
+- [`obra/superpowers`](https://github.com/obra/superpowers) — pick `systematic-debugging` and `verification-before-completion`.
+- [`trailofbits/skills`](https://github.com/trailofbits/skills) — `differential-review` and `sharp-edges` for deeper security review.
+- [`mgamalhz/foundation`](https://github.com/mgamalhz/foundation) — `state-lifecycle` and `audit-trail` ship with its packages.
 
 ## Roadmap
 
-- [ ] Evals for `laravel-security`: a Laravel app with planted vulnerabilities, scored with and without the skill.
-- [ ] `laravel-architecture`: when to use Actions, Services, DTOs and domain folders — and when not to.
+- [ ] `laravel-queries` — Eloquent, N+1, indexes, large tables, MySQL and PostgreSQL.
+- [ ] `laravel-architecture` — Actions, Services, DTOs, domain folders, and when not to add a layer.
+- [ ] `laravel-conventions` — naming and code style.
+- [ ] `laravel-testing` — Pest, factories, authorization and failure-path tests.
+- [ ] Reviewer subagents: `security-reviewer`, `query-reviewer`.
+- [ ] `AGENTS.md` template for Laravel projects.
+- [ ] Evals: a Laravel app with planted vulnerabilities and N+1s, scored with and without the skills.
 
 ## License
 
