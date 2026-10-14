@@ -16,15 +16,15 @@ agent that reads the [Agent Skills](https://agentskills.io) format.
 **Claude Code**
 
 ```bash
-/plugin marketplace add mgamalhz/skills
+/plugin marketplace add mgamalhz/laravel-skills
 /plugin install laravel-engineering@mgamalhz
 ```
 
 **Any agent** (via [skills.sh](https://skills.sh))
 
 ```bash
-npx skills add mgamalhz/skills
-npx skills add mgamalhz/skills --skill laravel-security   # just one
+npx skills add mgamalhz/laravel-skills
+npx skills add mgamalhz/laravel-skills --skill laravel-security   # just one
 ```
 
 **Manually:** copy a folder from `skills/` into your agent's skills directory

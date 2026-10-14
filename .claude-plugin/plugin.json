@@ -6,8 +6,8 @@
     "name": "Mohamed Gamal",
     "url": "https://mgamalhz.com"
   },
-  "homepage": "https://github.com/mgamalhz/skills",
-  "repository": "https://github.com/mgamalhz/skills",
+  "homepage": "https://github.com/mgamalhz/laravel-skills",
+  "repository": "https://github.com/mgamalhz/laravel-skills",
   "license": "MIT",
   "keywords": ["laravel", "security", "code-review", "engineering"]
 }
