@@ -41,13 +41,9 @@ General-purpose skills maintained elsewhere — install them from their source:
 
 ## Roadmap
 
-- [ ] `laravel-queries` — Eloquent, N+1, indexes, large tables, MySQL and PostgreSQL.
+- [ ] `laravel-queries` — N+1, indexes, large tables, locking, and safe migrations on MySQL and PostgreSQL.
 - [ ] `laravel-architecture` — Actions, Services, DTOs, domain folders, and when not to add a layer.
-- [ ] `laravel-conventions` — naming and code style.
-- [ ] `laravel-testing` — Pest, factories, authorization and failure-path tests.
-- [ ] Reviewer subagents: `security-reviewer`, `query-reviewer`.
-- [ ] `AGENTS.md` template for Laravel projects.
-- [ ] Evals: a Laravel app with planted vulnerabilities and N+1s, scored with and without the skills.
+- [ ] Small evals: a Laravel app with planted vulnerabilities and N+1s, scored with and without the skills.
 
 ## License
 
