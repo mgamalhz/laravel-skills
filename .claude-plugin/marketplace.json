@@ -9,7 +9,7 @@
     {
       "name": "laravel-engineering",
       "source": "./",
-      "description": "Laravel skills: security review and a verified done-checklist."
+      "description": "Laravel skills: security, performance and architecture reviews, and a verified done-checklist."
     }
   ]
 }

@@ -60,6 +60,9 @@ For each list endpoint, report or export you touched: relationships used in the
 loop are eager loaded (`with()`, `load()`, `withCount()`), and the number of
 queries does not grow with the number of rows.
 
+For lists, reports, exports, external calls or caching, also run the
+**Verify** section of `laravel-performance`.
+
 ### 5. Indexes
 
 Every new column used in `where`, `orderBy`, a join or a foreign key has an
@@ -75,6 +78,8 @@ php artisan migrate && php artisan migrate:rollback && php artisan migrate
 Run against a local or test database only.
 
 - `down()` works.
+- Migrations that already ran outside your machine are never edited; a change
+  to them is a new migration.
 - Safe on a large table: no long table locks during deploy, new `NOT NULL`
   columns have a default or a backfill, renames and type changes are split into
   steps the running code can survive.

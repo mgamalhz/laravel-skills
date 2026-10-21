@@ -151,6 +151,10 @@ RateLimiter::for('otp', fn (Request $request) => [
 - `composer audit` is clean or every advisory is understood and tracked.
 - Secrets live in environment variables, never in committed config or code.
 - CORS allows only the app's own origins; cookies are `secure` and `http_only`.
+- Security headers are set for web responses: `Strict-Transport-Security`,
+  `X-Content-Type-Options: nosniff`, `X-Frame-Options` (or CSP `frame-ancestors`),
+  and a Content Security Policy where the frontend allows it. A middleware or the
+  web server sets them; check one real response.
 - Links that grant access without login use `URL::temporarySignedRoute()`.
 
 ---
